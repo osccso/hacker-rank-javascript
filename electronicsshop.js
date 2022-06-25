@@ -19,7 +19,7 @@ function getMoneySpent(keyboards,drives,b) {
       console.log(amount)
       if (amount <= b) break 
     }
-    if (amount > maxWithMoney) maxWithMoney = amount
+    if (amount > maxWithMoney && amount <= b) maxWithMoney = amount
   }
   if (maxWithMoney === 0) return -1
   return maxWithMoney
